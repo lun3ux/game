@@ -5,6 +5,8 @@ class game{
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) throws InterruptedException {
+        Cat.sleeping();
+        Cat.Fighting();
         Start();
     }
 
@@ -25,11 +27,22 @@ class game{
         TypingAnimation.printWithTypingEffect("So enjoy!",50);
         TypingAnimation.printWithTypingEffect("You woke up, lying in a small patch of grass in a forest", 50);
         TypingAnimation.printWithTypingEffect("You had a strange dream before you woke up... what was it again?", 50);
+        System.out.println("TRY TO REMEMBER? Y/N");
         String response = sc.nextLine();
+        switch(response) {
+            case "Y":
+            {
+                Prolouge();
+            }
+            case "N":
+            {
+                TypingAnimation.printWithTypingEffect("You shake your head and memories are coming back to you.", 50);
+            }
+        }
 
     }
     public static void Prolouge() throws InterruptedException {
        TypingAnimation.printWithTypingEffect("You try your best to focus on what your dream was about.", 50);
-       TypingAnimation.printWithTypingEffect(". . .", 3000);
+       TypingAnimation.printWithTypingEffect("...", 3000);
     }
 }

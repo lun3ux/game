@@ -30,11 +30,10 @@ class ui {
             
             int Action = sc.nextInt();
             switch (Action) {
-                case 1: {
+                case 1 -> {
+                    
                 }
             }
 
     }
- {
- } 
 }

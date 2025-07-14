@@ -14,9 +14,12 @@ class ui {
     
         public static void printHealthBar(String name, int health, int maxHealth) {
             int barLength = 20;
-            int filled = (int) ((double) health / maxHealth * barLength);
+            if (maxHealth <= 0) maxHealth = 1; // Prevent division by zero
+            int filled = (int) Math.round((double) health / maxHealth * barLength);
+            if (filled < 0) filled = 0;
+            if (filled > barLength) filled = barLength;
             String bar = "█".repeat(filled) + "-".repeat(barLength - filled);
-            System.out.println(name + " HP: [" + bar + "] " + health + "/" + maxHealth);
+            System.out.println(name + "'s HP: [" + bar + "] " + health + "/" + maxHealth);
         }
     
         public static void printMenu() {
@@ -27,13 +30,5 @@ class ui {
             System.out.println("║ 4. Use Item      ║");
             System.out.println("╚══════════════════╝");
             TypingAnimation.printWithTypingEffect("Select Action Number:", 10);
-            
-            int Action = sc.nextInt();
-            switch (Action) {
-                case 1 -> {
-                    
-                }
-            }
-
     }
 }

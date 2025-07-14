@@ -1,17 +1,15 @@
-
 class Cat {
 
-
-    protected static String name;
-    protected static int health;
-    protected static int maxHealth;
-    protected static int level;
+    protected String name;
+    protected int health;
+    protected int maxHealth;
+    protected int level;
 
     public Cat(String name, int health, int level) {
-        Cat.name = name;
-        Cat.health = health;
-        Cat.maxHealth = health;
-        Cat.level = level;
+        this.name = name;
+        this.health = health;
+        this.maxHealth = health;
+        this.level = level;
     }
 
     public boolean isAlive() {
@@ -25,7 +23,7 @@ class Cat {
         }
     }
 
-    public String getName() {
+    public  String getName() {
         return name;
     }
 
@@ -33,26 +31,33 @@ class Cat {
         return health;
     }
 
+    public int getMaxHealth() {
+        return maxHealth;
+    }
+
     public int getLevel() {
         return level;
     }
 
-    
-        public void heal() {
-            health += 5;
-            if (health > maxHealth) {
-                health = maxHealth;
-            }
-            System.out.println(name + " licks their paw and heals 5 HP!");
+    public void Hiss() {
+        System.out.println("That... didnt really do anything. they still seem like they want to fight you.");
+    }
+
+    public void heal() {
+        health += 5;
+        if (health > maxHealth) {
+            health = maxHealth;
         }
+        System.out.println(name + " licks their paw and heals 5 HP!");
+    }
 
-        public static void attack(Cat target) {
-       int damage = level + 5;
-       System.out.println(name + " scratches " + target.name + " for " + damage + " damage!");
-       target.takeDamage(damage);
-     }
+    public void attack(Cat target) {
+        int damage = level + 5;
+        System.out.println(name + " scratches " + target.name + " for " + damage + " damage!");
+        target.takeDamage(damage);
+    }
 
-        public static void Fighting() {
+    public static void Fighting() {
         System.out.println(" _._     _,-'\"\"`-._");
         System.out.println("(,-.`._,'(       |\\`-/|");
         System.out.println("    `-.-' \\ )-`( , o o)");
@@ -72,14 +77,13 @@ class Enemy extends Cat {
 
     public Enemy(String name) {
         super(name, 15, 1);
-        Enemy.name = name;
-
     }
 
 }
+
 class Player extends Cat {
 
-        public Player(String name) {
-            super(name, 20, 1);
-        }
+    public Player(String name) {
+        super(name, 20, 1);
+    }
 }

@@ -5,15 +5,38 @@ class game {
 
     static Scanner sc = new Scanner(System.in);
     static Player player;
+    static class Player {
+        String name;
+        public Player(String name) { this.name = name; }
+        public String getName() { return name; }
+    }
+
+    static class TypingAnimation {
+        public static void printWithTypingEffect(String text, long delay) throws InterruptedException {
+            System.out.println(text);
+            Thread.sleep(delay);
+        }
+    }
+
+    static class ui {
+        public static void printHeader(String header) {
+            System.out.println("=== " + header + " ===");
+        }
+    }
+
+    static class Cat {
+        public static void Fighting() {
+            System.out.println("Cat is fighting!");
+        }
+    }
 
     public static void titlescreen() {
-        Cat.Fighting();
         ui.printHeader("UNNAMED GAME!");
     }
 
     public static void main(String[] args) throws InterruptedException {
         titlescreen();
-        player = new Player("");  // ✅ Initialize here
+        player = new Player("");
         skip();
     }
 
@@ -33,6 +56,8 @@ class game {
         TypingAnimation.printWithTypingEffect("You had a strange dream before you woke up... what was it again?", 50);
         ui.printHeader("TRY TO REMEMBER? Y/N");
     }
+
+    // For raw development documentation, see: https://github.com/Josue/game/blob/main/README.md
 
     public static void Start() throws InterruptedException {
 

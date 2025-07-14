@@ -1,8 +1,4 @@
-   へ  ♡      ╱|、
- ૮  >  <)     (˚ˎ 。7  
- /  ⁻  ៸|       |、˜〵 
- 乀(ˍ, ل ل      じしˍ,)ノ
-
+<img width="186" height="82" alt="image" src="https://github.com/user-attachments/assets/64c15572-46bf-4a95-a93d-f017c3192df2" />
 
 You're a cat on a noble mission: deliver the legendary fish to the Cat Queen.
 Along the way, you'll face strange dreams, fuzzy memories, and plenty of silly challenges. 

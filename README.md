@@ -1,10 +1,29 @@
-This is a small game that I had made for valentines day, but transformed into a little RPG. Youre a cat trying to bring the fish to the cat queen!
+   へ  ♡      ╱|、
+ ૮  >  <)     (˚ˎ 。7  
+ /  ⁻  ៸|       |、˜〵 
+ 乀(ˍ, ل ل      じしˍ,)ノ
+
+
+You're a cat on a noble mission: deliver the legendary fish to the Cat Queen.
+Along the way, you'll face strange dreams, fuzzy memories, and plenty of silly challenges. 
+It's my first time coding something like this, so expect bugs.
+
+	Development Log
 
 June 22, 2025
-Just rewrote some dialogue, added some styling and intro screen.
+Rewrote some dialogue, added intro screen and basic styling.
 
-June 24,2025
-Begun construction of JFrame, the goal is to make it a game not only in text console but though an actual window, rendering is being tested, as well as more bug fixes.
+June 24, 2025
+Began building a JFrame window—goal is to make a graphical version alongside the console one. Basic rendering tests and more bug fixes added.
 
 July 14, 2025
-Huge debugging! the fight works!!!
+Major debugging milestone! The fight mechanic now works!!
+
+	Notes
+This is a personal project, made for fun and learning.
+
+Expect rough edges and a few weird bugs.
+
+Feedback and ideas are welcome!
+
+Enjoy the adventure—and may the Cat Queen bless your paws.
